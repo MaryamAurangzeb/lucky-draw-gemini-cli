@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Draw</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lucky Draw</h1>
+        </header>
+
+        <main>
+            <div class="card" id="registration-card">
+                <h2>Join the Draw</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <div class="card" id="winner-card">
+                <h2>🏆 Winner 🏆</h2>
+                <div id="winner-display">
+                    <p>Click "Draw Winner" to see who won!</p>
+                </div>
+            </div>
+
+            <div class="card" id="admin-panel">
+                <h2>Admin Panel</h2>
+                <button id="draw-button">Draw Winner</button>
+                <button id="view-participants-button">View Participants</button>
+                <button id="view-winners-button">View Past Winners</button>
+            </div>
+        </main>
+        
+        <footer>
+            <div id="message-area"></div>
+            <div class="results-area" id="participants-list" style="display: none;">
+                <h3>All Participants</h3>
+                <ul id="participants-ul"></ul>
+            </div>
+            <div class="results-area" id="winners-list" style="display: none;">
+                <h3>Past Winners</h3>
+                <ul id="winners-ul"></ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
